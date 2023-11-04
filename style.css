@@ -1,8 +1,13 @@
 /* todos respeitam a sua regra */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -142,6 +147,7 @@ footer {
 
 }
 
+
 ul li {
     list-style: none;
     cursor: pointer;
@@ -236,4 +242,79 @@ ul:hover a:hover {
 img.imageChange {
     border-radius: 2rem;
 
+}
+.login-modal{
+    display: none;
+    position: absolute;
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem black;
+    background-color: #FFF;
+    right: 0;
+    height: 40rem;
+    padding-top: 2rem;
+    animation: animation .3s linear forwards;
+    
+
+    > #conteudo {
+        margin-top: 1rem;
+    
+        >h1 {
+            text-align: center;
+        }
+
+        > form {
+            display: flex;
+            flex-direction: column;
+            padding-inline: 2rem;
+            margin-top: 1rem;
+            gap: 1rem;
+            
+            > p {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            >input{
+                border: 1px solid rgba(128, 128, 128, 0.46);
+                padding: 0.7rem 1rem;
+                outline: none;
+                font-size: 1rem;
+            }
+
+            > button {
+                border: none;
+                padding-block: .8rem;
+                font-size: 1rem;
+                background-color: ;
+            }
+            
+        }
+    }
+  
+    > img {
+      position: absolute;
+      top: .5rem;
+      right: .5rem;
+      width: 1.2rem;
+      cursor: pointer;
+    }
+
+}
+.login-modal.active{
+    display: block;
+}
+@keyframes animation {
+    0%{
+        opacity: 0;
+        right: -10rem;
+        transform: scale(0.5);
+        
+    }
+    100%{
+    opacity: 1;
+    transform: scale(1);
+
+
+    right: 0;
+    
+    }
 }

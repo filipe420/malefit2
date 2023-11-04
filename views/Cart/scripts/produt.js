@@ -7,7 +7,8 @@ class Produto {
       this.nomearquivoimagem = nomearquivoimagem;
     }
   }
-  
+
+
   // Crie instâncias de produtos
   const produto1 = new Produto("boardshort musgo", "sieg", 115, "./img/produto1.jpg");
   const produto2 = new Produto("boardshort black carmel", "sieg", 115, "./img/produto 2.jpg");
@@ -79,6 +80,7 @@ class Produto {
   
         // Adicione o card de produto ao container
         container.appendChild(cardElement);
+     
       });
     }
   }
