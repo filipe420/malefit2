@@ -74,6 +74,7 @@ class Produto {
             <p>${produto.preco}</p>
             <div class="buttondescription">
              <button class="buttonchange">adicionar</button>
+             <button class="buttonremove">remover</button
             </div
           </div>
         `;
