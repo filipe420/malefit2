@@ -65,7 +65,7 @@ class Produto {
       this.produtos.forEach((produto, index) => {
         const cardElement = document.createElement("div");
         const cardDescription = `description-contatiner`
-        cardElement.id = `card-produto-${index + 1}`;
+        cardElement.id = `${index + 1}`;
         cardElement.innerHTML = `
           <img src="${produto.nomearquivoimagem}" alt="${produto.nome}" class="imageChange">
           <div class="${cardDescription}">
@@ -73,8 +73,8 @@ class Produto {
             <p>${produto.marca}</p>
             <p>${produto.preco}</p>
             <div class="buttondescription">
-             <button class="buttonchange">adicionar</button>
-             <button class="buttonremove">remover</button
+             <button class="buttonchange" id="${cardElement.id}">adicionar</button>
+             <button class="buttonremove" id="${cardElement.id}">remover</button
             </div
           </div>
         `;
